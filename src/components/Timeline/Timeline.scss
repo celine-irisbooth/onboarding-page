@@ -1,0 +1,31 @@
+@use '../../styles/partials' as *;
+
+.timeline {
+  &__steps {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    position: relative;
+
+    // Connecting line between step circles
+    &::before {
+      content: '';
+      position: absolute;
+      top: 27px;
+      left: calc(12.5% + 28px);
+      right: calc(12.5% + 28px);
+      height: 2px;
+      background: $border;
+      z-index: 0;
+    }
+
+    @include md {
+      flex-wrap: wrap;
+      gap: 20px;
+
+      &::before {
+        display: none;
+      }
+    }
+  }
+}

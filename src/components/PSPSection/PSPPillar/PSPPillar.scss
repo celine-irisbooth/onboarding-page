@@ -1,0 +1,36 @@
+@use '../../../styles/partials' as *;
+
+.psp-pillar {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 16px;
+  background: rgba(12, 182, 159, 0.1);
+  border: 1px solid rgba(12, 182, 159, 0.2);
+  border-radius: 10px;
+  padding: 18px 20px;
+
+  &__icon {
+    font-size: 22px;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    font-size: 14px;
+    font-weight: 700;
+    color: $white;
+    margin-bottom: 4px;
+  }
+
+  &__desc {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.52);
+    line-height: 1.6;
+  }
+}

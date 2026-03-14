@@ -1,0 +1,20 @@
+// ── Brand colours ─────────────────────────────────
+$aqua:    #0CB69F;
+$navy:    #052F4B;
+$teal:    #005C6A;
+$yellow:  #EDF700;
+$white:   #FFFFFF;
+$text:    #1e293b;
+$muted:   #64748b;
+$border:  #e2e8f0;
+$bg:      #f8fafc;
+$card-bg: #f0faf8;
+
+// ── Gradients ─────────────────────────────────────
+$gradient-hero:       linear-gradient(135deg, #{$navy} 0%, #{$teal} 100%);
+$gradient-footer-bar: linear-gradient(90deg, #{$aqua} 0%, #{$navy} 55%, #{$teal} 100%);
+$gradient-step-num:   linear-gradient(135deg, #{$aqua} 0%, #{$teal} 100%);
+
+// ── Layout ────────────────────────────────────────
+$padding-desktop: 60px;
+$padding-mobile:  24px;

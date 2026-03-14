@@ -1,0 +1,51 @@
+@use '../../styles/partials' as *;
+
+.psp-section {
+  &__hero {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 64px;
+    background: $gradient-hero;
+    border-radius: 18px;
+    padding: 56px 64px;
+
+    @include md {
+      flex-direction: column;
+      padding: 40px 32px;
+      gap: 36px;
+    }
+  }
+
+  &__text-col {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  &__title {
+    font-size: 32px;
+    font-weight: 700;
+    color: $white;
+    letter-spacing: -0.5px;
+    line-height: 1.2;
+    margin-bottom: 18px;
+
+    span {
+      color: $aqua;
+    }
+  }
+
+  &__desc {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.58);
+    line-height: 1.75;
+  }
+
+  &__pillars {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 14px;
+  }
+}

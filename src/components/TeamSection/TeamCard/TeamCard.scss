@@ -1,0 +1,90 @@
+@use '../../../styles/partials' as *;
+
+.team-card {
+  display: flex;
+  flex-direction: column;
+  width: calc(25% - 15px);
+  background: $white;
+  border: 1.5px solid $border;
+  border-radius: 14px;
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+
+  @include md {
+    width: calc(50% - 10px);
+  }
+
+  @include sm {
+    width: 100%;
+  }
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 32px rgba(5, 47, 75, 0.12);
+  }
+
+  &__avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $gradient-hero;
+    height: 200px;
+  }
+
+  &__initials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background: rgba(12, 182, 159, 0.18);
+    border: 2.5px solid rgba(12, 182, 159, 0.45);
+    font-size: 24px;
+    font-weight: 800;
+    color: $aqua;
+    letter-spacing: -1px;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    padding: 18px 20px 22px;
+  }
+
+  &__badge {
+    display: inline-block;
+    align-self: flex-start;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    background: $card-bg;
+    color: $teal;
+    padding: 3px 10px;
+    border-radius: 20px;
+    margin-bottom: 8px;
+  }
+
+  &__name {
+    font-size: 16px;
+    font-weight: 700;
+    color: $navy;
+    margin-bottom: 6px;
+  }
+
+  &__email {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    font-size: 13px;
+    color: $aqua;
+    font-weight: 600;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

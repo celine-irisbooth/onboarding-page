@@ -1,0 +1,22 @@
+// ── Breakpoints ───────────────────────────────────
+@mixin md {
+  @media (max-width: 960px) { @content; }
+}
+
+@mixin sm {
+  @media (max-width: 580px) { @content; }
+}
+
+// ── Section base layout (mirrors atlas-avenue contentMargin) ──
+@mixin section-content {
+  display: flex;
+  flex-direction: column;
+}
+
+// ── Flex row container ─────────────────────────────
+@mixin flex-row($wrap: wrap, $gap: 20px) {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: $wrap;
+  gap: $gap;
+}

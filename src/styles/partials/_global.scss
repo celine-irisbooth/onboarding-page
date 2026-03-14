@@ -1,0 +1,66 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+// ── Reset ─────────────────────────────────────────
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+// ── CSS Custom Properties ─────────────────────────
+:root {
+  --aqua:    #{$aqua};
+  --navy:    #{$navy};
+  --teal:    #{$teal};
+  --yellow:  #{$yellow};
+  --white:   #{$white};
+  --text:    #{$text};
+  --muted:   #{$muted};
+  --border:  #{$border};
+  --bg:      #{$bg};
+  --card-bg: #{$card-bg};
+}
+
+// ── Base ──────────────────────────────────────────
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Rethink Sans', sans-serif;
+  background: $white;
+  color: $text;
+}
+
+// ── Shared section layout ─────────────────────────
+.section-wrap {
+  @include section-content;
+  padding: 88px $padding-desktop;
+
+  @include md {
+    padding: 64px $padding-mobile;
+  }
+
+  &--alt {
+    background: $bg;
+  }
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: 800;
+  color: $navy;
+  letter-spacing: -0.5px;
+  line-height: 1.15;
+  margin-bottom: 10px;
+}
+
+.section-sub {
+  font-size: 16px;
+  color: $muted;
+  line-height: 1.7;
+  margin-bottom: 52px;
+}

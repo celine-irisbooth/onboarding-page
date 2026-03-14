@@ -1,0 +1,46 @@
+@use '../../styles/partials' as *;
+
+.tooltip {
+  position: relative;
+  display: inline;
+
+  &__icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: $teal;
+    color: $white;
+    font-size: 9px;
+    font-weight: 700;
+    font-style: normal;
+    cursor: help;
+    margin-left: 4px;
+    vertical-align: middle;
+  }
+
+  &__content {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    bottom: calc(100% + 8px);
+    left: 0;
+    width: 240px;
+    background: $navy;
+    color: rgba(255, 255, 255, 0.82);
+    font-size: 11px;
+    line-height: 1.55;
+    padding: 10px 12px;
+    border-radius: 8px;
+    z-index: 10;
+    transition: opacity 0.18s;
+    pointer-events: none;
+  }
+
+  &:hover &__content {
+    visibility: visible;
+    opacity: 1;
+  }
+}

@@ -1,0 +1,4 @@
+// Entry point for component SCSS files.
+// @use '../../styles/partials' as * to get all variables + mixins.
+@forward 'variables';
+@forward 'mixins';

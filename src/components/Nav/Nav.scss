@@ -1,0 +1,55 @@
+@use '../../styles/partials' as *;
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: $white;
+  border-bottom: 1.5px solid $border;
+  box-shadow: 0 2px 12px rgba(5, 47, 75, 0.08);
+  padding: 0 $padding-desktop;
+
+  @include md {
+    padding: 0 $padding-mobile;
+  }
+
+  &__logo {
+    padding: 14px 0;
+
+    img {
+      display: block;
+      height: 38px;
+      width: auto;
+    }
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: row;
+
+    @include sm {
+      display: none;
+    }
+  }
+
+  &__link {
+    font-size: 13px;
+    font-weight: 600;
+    color: $muted;
+    padding: 20px 22px;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+    transition: color 0.2s, border-color 0.2s;
+    letter-spacing: 0.1px;
+
+    &:hover,
+    &--active {
+      color: $navy;
+      border-bottom-color: $aqua;
+    }
+  }
+}
