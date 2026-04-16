@@ -1,11 +1,27 @@
 export const steps = [
   {
     num: 1,
-    title: 'Prep for Booth Shipment',
-    sections: [
+    title: 'Before Your Booth Arrives',
+    subCards: [
       {
-        label: 'Your Shipping Details',
-        desc: "Before your booth ships, you'll need to complete the shipping form.",
+        subNum: 'A',
+        title: 'Choose your shipment method',
+        desc: 'Review your shipping options to determine what works best for your space.',
+        resources: [
+          {
+            icon: '📦',
+            label: 'Shipping Guide',
+            href: 'https://docs.google.com/presentation/d/1BEnF3En9XWInyIN37SSR57pl-Wa-jPAI/edit',
+            external: true,
+          },
+        ],
+      },
+      {
+        subNum: 'B',
+        title: 'Enter your shipping details',
+        desc: "Before your booth ships, send us your shipping details.",
+        tooltip:
+          'Delivery is to the loading dock or receiving area.',
         resources: [
           {
             icon: '📋',
@@ -16,10 +32,11 @@ export const steps = [
         ],
       },
       {
-        label: 'Your Branding Details',
-        desc: 'Send us your logo and messaging for the digital branding on the booth.',
+        subNum: 'C',
+        title: 'Submit your branding details',
+        desc: 'Submit your logo and messaging for the digital branding on the booth.',
         tooltip:
-          'For your admin account, choose a group email address (e.g., photos@yourcompany.com) so you can share credentials across your team.',
+          'For your admin account, choose a group email address (e.g., photos@yourcompany.com) to share credentials.',
         resources: [
           {
             icon: '🎨',
@@ -36,32 +53,16 @@ export const steps = [
     title: 'Your Booth Arrives!',
     sections: [
       {
-        label: 'Steps to Turn Your Booth On',
-        desc: 'Instructions to unpack and set up your booth.',
+        label: 'Prepare for Delivery',
+        checklist: [
+          'Confirm a loading dock, freight elevator, and/or receiving area is available',
+        ],
+        desc: 'Review the Shipping Guide for full delivery-day instructions to accept your shipment.',
         resources: [
-          { icon: '🔧', label: 'Instruction Manual', href: '#' },
           {
             icon: '📦',
-            label: 'Assembly Video (Full Booth only)',
-            href: 'https://drive.google.com/file/d/12v3ngU5jm6yNf_-3utBBNNsuZOdQXuNk/view',
-            external: true,
-          },
-        ],
-      },
-      {
-        label: 'Key Details for Your IT Team',
-        desc: 'Send these documents to your IT team, to enable booth VPN access for remote support.',
-        resources: [
-          {
-            icon: '🌐',
-            label: 'Network Diagram',
-            href: 'https://drive.google.com/file/d/1aX7bbxwWUlGL9TtzpvEoyH785B_jK20h/view',
-            external: true,
-          },
-          {
-            icon: '⚙️',
-            label: 'Port Configuration',
-            href: 'https://drive.google.com/file/d/1rHIMpdNHRpG5p57mH9yC3csgBDc4jkK9/view',
+            label: 'Shipping Guide',
+            href: 'https://docs.google.com/presentation/d/1BEnF3En9XWInyIN37SSR57pl-Wa-jPAI/edit',
             external: true,
           },
         ],
@@ -70,22 +71,72 @@ export const steps = [
   },
   {
     num: 3,
-    title: 'Go Live',
-    sections: [
+    title: 'Set Up Your Booth',
+    subCards: [
       {
-        label: 'Your booth is set up and connected!',
-        desc: 'Take your first studio-quality headshot and review best practices!',
-        resources: [{ icon: '⭐', label: 'Best Practices', href: '#' }],
+        subNum: 'A',
+        title: 'Assemble your booth',
+        desc: 'Everything you need to connect and get your booth ready.',
+        resources: [
+          {
+            icon: '⚡',
+            label: 'Quick Setup Guide',
+            desc: 'A short guide to get your booth up and running fast.',
+            href: 'https://docs.google.com/presentation/d/1zYLH5B9gY4Q7oWSLdFc10qfgHPLSWQmB/edit?usp=sharing&ouid=117691127212973742030&rtpof=true&sd=true',
+            external: true,
+          },
+          {
+            icon: '📖',
+            label: 'Instruction Manual',
+            desc: 'The full reference — daily operation, branding, and more.',
+            href: 'https://docs.google.com/presentation/d/1tP6dfkR2k0Ido5oTaHWWeDS_TLZ2Qwb-/edit?usp=sharing&ouid=117691127212973742030&rtpof=true&sd=true',
+            external: true,
+          },
+        ],
+      },
+      {
+        subNum: 'B',
+        title: 'Share with your IT team',
+        desc: 'Forward these to your IT team to configure internet and network access.',
+        resources: [
+          {
+            icon: '📖',
+            label: 'Instruction Manual — Network Setup',
+            href: 'https://docs.google.com/presentation/d/1tP6dfkR2k0Ido5oTaHWWeDS_TLZ2Qwb-/edit?slide=id.p9#slide=id.p9',
+            external: true,
+          },
+          {
+            icon: '🌐',
+            label: 'Network & Port Configuration',
+            desc: '🔒 Password-protected',
+            href: 'https://drive.google.com/file/d/14b9et-qlWCVEPFZofDTyoJiHlaqTaMIk/view?usp=sharing',
+            external: true,
+          },
+        ],
       },
     ],
   },
   {
     num: 4,
-    title: 'Partner Success Plan Call',
-    sections: [
+    title: 'Go Live &\nYour Success Plan',
+    subCards: [
       {
-        label: 'Success Roadmap & Photo Quality Check',
-        desc: "After you take your first set of photos, we'll schedule a call for a photo quality check and walk through your Partner Success Plan, your strategic roadmap for reaching your goals.",
+        subNum: 'A',
+        title: 'Capture your first headshot',
+        desc: 'Take your first studio-quality headshot and review best practices!',
+        resources: [
+          {
+            icon: '⭐',
+            label: 'Best Practices',
+            href: 'https://drive.google.com/file/d/1HRXviOGBvAejXhBjJRFVnLMfzYJPNLQQ/view?usp=sharing',
+            external: true,
+          },
+        ],
+      },
+      {
+        subNum: 'B',
+        title: 'Kick off your Success Plan',
+        desc: "After your first set of photos, we'll schedule a call for a photo quality check and walk through your Partner Success Plan, your strategic roadmap for reaching your goals.\n\nAfter the quality check, we'll apply your booth branding and you'll get an email to activate your admin account.",
         resources: [
           {
             icon: '🗺️',
