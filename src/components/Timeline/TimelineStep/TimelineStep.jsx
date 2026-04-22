@@ -14,21 +14,29 @@ function ResourceLink({ icon, label, desc, href, external }) {
   );
 }
 
-function SubCard({ subNum, title, desc, tooltip, resources }) {
+function SubCard({ subNum, title, desc, tooltip, resources, warning }) {
   return (
-    <div className="timeline-step__sub-card">
+    <div className={`timeline-step__sub-card${warning ? ' timeline-step__sub-card--warning' : ''}`}>
       <div className="timeline-step__sub-card-header">
-        <span className="timeline-step__sub-card-num">{subNum}</span>
+        {subNum && <span className="timeline-step__sub-card-num">{subNum}</span>}
+        {warning && <span className="timeline-step__sub-card-warning-icon">⚠️</span>}
         <span className="timeline-step__sub-card-title">{title}</span>
       </div>
       {desc && (
         <p className="timeline-step__section-desc">
-          {desc.split('\n\n').map((part, k, arr) => (
-            <span key={k}>
-              {part}
-              {k < arr.length - 1 && <><br /><br /></>}
-            </span>
-          ))}
+          {desc.split('\n\n').map((part, k, arr) => {
+            const hasBold = part.includes('<strong>');
+            return (
+              <span key={k}>
+                {hasBold ? (
+                  <span dangerouslySetInnerHTML={{ __html: part }} />
+                ) : (
+                  part
+                )}
+                {k < arr.length - 1 && <><br /><br /></>}
+              </span>
+            );
+          })}
           {tooltip && <Tooltip text={tooltip} />}
         </p>
       )}

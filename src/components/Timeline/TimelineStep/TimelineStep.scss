@@ -82,6 +82,17 @@
         background: $border;
       }
     }
+
+    &--warning {
+      background: #fffbf0;
+      border-color: #f59e0b;
+      border-width: 2px;
+    }
+  }
+
+  &__sub-card-warning-icon {
+    font-size: 14px;
+    flex-shrink: 0;
   }
 
   &__sub-card-header {

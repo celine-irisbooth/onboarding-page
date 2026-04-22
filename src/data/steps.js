@@ -51,13 +51,12 @@ export const steps = [
   {
     num: 2,
     title: 'Your Booth Arrives!',
-    sections: [
+    subCards: [
       {
-        label: 'Prepare for Delivery',
-        checklist: [
-          'Confirm a loading dock, freight elevator, and/or receiving area is available',
-        ],
+        subNum: 'A',
+        title: 'Prepare for delivery',
         desc: 'Review the Shipping Guide for full delivery-day instructions to accept your shipment.',
+        tooltip: 'Confirm a loading dock, freight elevator, and/or receiving area is available.',
         resources: [
           {
             icon: '📦',
@@ -67,16 +66,10 @@ export const steps = [
           },
         ],
       },
-    ],
-  },
-  {
-    num: 3,
-    title: 'Set Up Your Booth',
-    subCards: [
       {
-        subNum: 'A',
+        subNum: 'B',
         title: 'Assemble your booth',
-        desc: 'Everything you need to connect and get your booth ready.',
+        desc: 'Everything you need to assemble and get your booth ready.',
         resources: [
           {
             icon: '⚡',
@@ -94,9 +87,41 @@ export const steps = [
           },
         ],
       },
+    ],
+  },
+  {
+    num: 3,
+    title: 'Set Up Your Internet\nand VPN Access',
+    subCards: [
       {
-        subNum: 'B',
-        title: 'Share with your IT team',
+        warning: true,
+        title: 'Software Upgrade — Extra Step',
+        desc: "We're shipping new features to your booth! Our team will be upgrading your booth from the legacy software to the new platform.\n\n<strong>If you were notified about the upgrade,</strong> please work with your IT team to set up the Legacy internet and network configuration.",
+        resources: [
+          {
+            icon: '📖',
+            label: 'Legacy Internet Connection Guide',
+            href: 'https://docs.google.com/presentation/d/1T4fuOjzdeFKReElF7NDdoze2AxQanrEu/edit',
+            external: true,
+          },
+          {
+            icon: '🌐',
+            label: 'Legacy Network Diagram',
+            desc: '🔒 Password-protected',
+            href: 'https://drive.google.com/file/d/1wVufqoDLMBXILBEAG9DXbE96_mXhMynj/view?usp=drive_link',
+            external: true,
+          },
+          {
+            icon: '🌐',
+            label: 'Legacy Port Configuration',
+            desc: '🔒 Password-protected',
+            href: 'https://drive.google.com/file/d/1h0EZ1dbB0XFUUAearxGy9bcYo1mnCEso/view?usp=drive_link',
+            external: true,
+          },
+        ],
+      },
+      {
+        title: 'Share with your IT team (new platform)',
         desc: 'Forward these to your IT team to configure internet and network access.',
         resources: [
           {
