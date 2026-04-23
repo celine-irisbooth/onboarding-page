@@ -25,7 +25,7 @@ function SubCard({ subNum, title, desc, tooltip, resources, warning }) {
       {desc && (
         <p className="timeline-step__section-desc">
           {desc.split('\n\n').map((part, k, arr) => {
-            const hasBold = part.includes('<strong>');
+            const hasBold = part.includes('<strong>') || part.includes('<span');
             return (
               <span key={k}>
                 {hasBold ? (

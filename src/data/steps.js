@@ -95,8 +95,8 @@ export const steps = [
     subCards: [
       {
         warning: true,
-        title: 'Software Upgrade — Extra Step',
-        desc: "We're shipping new features to your booth! Our team will be upgrading your booth from the legacy software to the new platform.\n\n<strong>If you were notified about the upgrade,</strong> please work with your IT team to set up the Legacy internet and network configuration.",
+        title: 'Legacy Upgrade — Extra Step',
+        desc: '<span class="warning-qualifier"><strong>This only applies if you were notified about the upgrade.</strong> Skip this step if you are on the new platform.</span>\n\nWe\'re shipping new features to your booth! Our team will be upgrading your booth from the Legacy software to the new platform.\n\nForward the documents below to your IT team to set up the Legacy internet and network.',
         resources: [
           {
             icon: '📖',
@@ -121,8 +121,8 @@ export const steps = [
         ],
       },
       {
-        title: 'Share with your IT team (new platform)',
-        desc: 'Forward these to your IT team to configure internet and network access.',
+        title: 'New Platform — IT Network Setup',
+        desc: 'Share these documents with your IT team to configure internet and network access.',
         resources: [
           {
             icon: '📖',
@@ -161,7 +161,7 @@ export const steps = [
       {
         subNum: 'B',
         title: 'Kick off your Success Plan',
-        desc: "After your first set of photos, we'll schedule a call for a photo quality check and walk through your Partner Success Plan, your strategic roadmap for reaching your goals.\n\nAfter the quality check, we'll apply your booth branding and you'll get an email to activate your admin account.",
+        desc: "After your first set of photos, we'll schedule a call for a photo quality check and walk through your Success Plan, your strategic roadmap for reaching your goals.\n\nAfter the quality check, we'll apply your booth branding and you'll get an email to activate your admin account.",
         resources: [
           {
             icon: '🗺️',

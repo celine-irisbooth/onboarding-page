@@ -6,7 +6,7 @@ export function PSPSection() {
   return (
     <section id="psp">
       <div className="section-wrap">
-        <div className="section-title">Your Partner Success Plan</div>
+        <div className="section-title">Your Success Plan</div>
         <p className="section-sub">
           After your booth is live, we build your success plan together.
         </p>
@@ -18,7 +18,7 @@ export function PSPSection() {
               <span>Your roadmap to results.</span>
             </div>
             <p className="psp-section__desc">
-              We'll schedule a 30-minute call to walk through your Partner Success Plan.
+              We'll schedule a 30-minute call to walk through your Success Plan.
             </p>
           </div>
           <div className="psp-section__pillars">

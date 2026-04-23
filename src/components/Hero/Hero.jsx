@@ -8,7 +8,7 @@ export function Hero() {
       </h1>
       <p className="hero__subtitle">You're in good hands.</p>
       <p className="hero__desc">
-        Everything you need to go from box arrival to your first headshot.
+        Everything you need to go from delivery to your first headshot.
       </p>
     </div>
   );

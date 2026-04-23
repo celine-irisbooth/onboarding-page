@@ -87,12 +87,22 @@
       background: #fffbf0;
       border-color: #f59e0b;
       border-width: 2px;
+
+      .timeline-step__sub-card-title {
+        color: #92400e;
+      }
     }
   }
 
   &__sub-card-warning-icon {
     font-size: 14px;
     flex-shrink: 0;
+  }
+
+  .warning-qualifier {
+    color: #92400e;
+    font-size: 12px;
+    line-height: 1.5;
   }
 
   &__sub-card-header {
