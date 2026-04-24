@@ -106,16 +106,9 @@ export const steps = [
           },
           {
             icon: '🌐',
-            label: 'Legacy Network Diagram',
+            label: 'Legacy Network Configuration',
             desc: '🔒 Password-protected',
-            href: 'https://drive.google.com/file/d/1wVufqoDLMBXILBEAG9DXbE96_mXhMynj/view?usp=drive_link',
-            external: true,
-          },
-          {
-            icon: '🌐',
-            label: 'Legacy Port Configuration',
-            desc: '🔒 Password-protected',
-            href: 'https://drive.google.com/file/d/1h0EZ1dbB0XFUUAearxGy9bcYo1mnCEso/view?usp=drive_link',
+            href: 'https://drive.google.com/file/d/1UY9uo7BebLpWIRJlUxbdf2mV521dPH7t/view?usp=drive_link',
             external: true,
           },
         ],
