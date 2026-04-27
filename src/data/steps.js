@@ -154,7 +154,7 @@ export const steps = [
       {
         subNum: 'B',
         title: 'Kick off your Success Plan',
-        desc: "After your first set of photos, we'll schedule a call for a photo quality check and walk through your Success Plan, your strategic roadmap for reaching your goals.\n\nAfter the quality check, we'll apply your booth branding and you'll get an email to activate your admin account.",
+        desc: "After your first set of photos, we'll review your photos and push your booth branding. You'll get an email to activate your admin account.\n\nOnce your booth is ready to go live, we'll schedule your Success Plan Call to walk through your strategic roadmap for reaching your goals.",
         resources: [
           {
             icon: '🗺️',
