@@ -163,6 +163,18 @@
     gap: 8px;
   }
 
+  &__resource-group {
+    margin-top: 12px;
+
+    &-heading {
+      font-size: 12px;
+      font-weight: 700;
+      color: $navy;
+      letter-spacing: 0.2px;
+      margin-bottom: 8px;
+    }
+  }
+
   &__divider {
     margin: 14px 0 10px;
     border-top: 1px dashed $border;

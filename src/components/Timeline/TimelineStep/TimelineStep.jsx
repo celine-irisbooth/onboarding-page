@@ -14,7 +14,7 @@ function ResourceLink({ icon, label, desc, href, external }) {
   );
 }
 
-function SubCard({ subNum, title, desc, tooltip, resources, warning }) {
+function SubCard({ subNum, title, desc, tooltip, resources, resourceGroups, warning }) {
   return (
     <div className={`timeline-step__sub-card${warning ? ' timeline-step__sub-card--warning' : ''}`}>
       <div className="timeline-step__sub-card-header">
@@ -40,6 +40,16 @@ function SubCard({ subNum, title, desc, tooltip, resources, warning }) {
           {tooltip && <Tooltip text={tooltip} />}
         </p>
       )}
+      {resourceGroups && resourceGroups.map((group) => (
+        <div key={group.heading} className="timeline-step__resource-group">
+          <div className="timeline-step__resource-group-heading">{group.heading}</div>
+          <div className="timeline-step__resources">
+            {group.resources.map((res) => (
+              <ResourceLink key={res.label} {...res} />
+            ))}
+          </div>
+        </div>
+      ))}
       {resources && (
         <div className="timeline-step__resources">
           {resources.map((res) => (

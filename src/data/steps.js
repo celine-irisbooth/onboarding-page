@@ -95,27 +95,50 @@ export const steps = [
     subCards: [
       {
         warning: true,
-        title: 'Legacy Upgrade — Extra Step',
-        desc: '<span class="warning-qualifier"><strong>This only applies if you were notified about the upgrade.</strong> Skip this step if you are on the new platform.</span>\n\nWe\'re shipping new features to your booth! Our team will be upgrading your booth from the Legacy software to the new platform.\n\nForward the documents below to your IT team to set up the Legacy internet and network.',
-        resources: [
+        title: 'Legacy Upgrade — IT Network Setup',
+        desc: '<span class="warning-qualifier"><strong>This only applies if you were notified about the upgrade.</strong> Skip this if you\'re on the new platform.</span>\n\nWe\'re shipping new features to your booth! Our team will be upgrading your booth from the Legacy software to the new platform.\n\nForward <strong>all</strong> of the documents below to your IT team to configure network access for both the Legacy and new platform.',
+        resourceGroups: [
           {
-            icon: '📖',
-            label: 'Legacy Internet Connection Guide',
-            href: 'https://docs.google.com/presentation/d/1T4fuOjzdeFKReElF7NDdoze2AxQanrEu/edit',
-            external: true,
+            heading: 'Legacy Platform',
+            resources: [
+              {
+                icon: '📖',
+                label: 'Internet Connection Guide',
+                href: 'https://docs.google.com/presentation/d/1T4fuOjzdeFKReElF7NDdoze2AxQanrEu/edit',
+                external: true,
+              },
+              {
+                icon: '🌐',
+                label: 'Network Configuration',
+                desc: '🔒 Password-protected',
+                href: 'https://drive.google.com/file/d/1UY9uo7BebLpWIRJlUxbdf2mV521dPH7t/view?usp=drive_link',
+                external: true,
+              },
+            ],
           },
           {
-            icon: '🌐',
-            label: 'Legacy Network Configuration',
-            desc: '🔒 Password-protected',
-            href: 'https://drive.google.com/file/d/1UY9uo7BebLpWIRJlUxbdf2mV521dPH7t/view?usp=drive_link',
-            external: true,
+            heading: 'New Platform',
+            resources: [
+              {
+                icon: '📖',
+                label: 'Instruction Manual — Network Setup',
+                href: 'https://docs.google.com/presentation/d/1tP6dfkR2k0Ido5oTaHWWeDS_TLZ2Qwb-/edit?slide=id.p9#slide=id.p9',
+                external: true,
+              },
+              {
+                icon: '🌐',
+                label: 'Network Configuration',
+                desc: '🔒 Password-protected',
+                href: 'https://drive.google.com/file/d/14b9et-qlWCVEPFZofDTyoJiHlaqTaMIk/view?usp=sharing',
+                external: true,
+              },
+            ],
           },
         ],
       },
       {
         title: 'New Platform — IT Network Setup',
-        desc: 'Share these documents with your IT team to configure internet and network access.',
+        desc: '<strong>New platform clients only.</strong>\n\nShare these documents with your IT team to configure internet and network access.',
         resources: [
           {
             icon: '📖',
@@ -125,7 +148,7 @@ export const steps = [
           },
           {
             icon: '🌐',
-            label: 'Network & Port Configuration',
+            label: 'Network Configuration',
             desc: '🔒 Password-protected',
             href: 'https://drive.google.com/file/d/14b9et-qlWCVEPFZofDTyoJiHlaqTaMIk/view?usp=sharing',
             external: true,
