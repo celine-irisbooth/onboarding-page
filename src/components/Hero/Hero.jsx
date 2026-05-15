@@ -10,6 +10,14 @@ export function Hero() {
       <p className="hero__desc">
         Everything you need to go from delivery to your first headshot.
       </p>
+      <a
+        className="hero__pdf-link"
+        href="https://drive.google.com/file/d/1Ucq7ptVaddOQLsmMsn4wpckCD4E72rBG/view?usp=drive_link"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Download a PDF copy of this page
+      </a>
     </div>
   );
 }
