@@ -55,8 +55,7 @@ export const steps = [
       {
         subNum: 'A',
         title: 'Prepare for delivery',
-        desc: 'Review the Shipping Guide for full delivery-day instructions to accept your shipment.',
-        tooltip: 'Confirm a loading dock, freight elevator, and/or receiving area is available.',
+        desc: 'Share the Shipping Guide (Delivery Checklist) with your team so they know what to expect on delivery day.\n<div class="inline-warning">⚠️&nbsp; Before you accept the delivery, ensure the package is in good condition. If there is damage:<ul><li>Report damages on the Bill of Lading (BOL)</li><li><strong>Refuse the shipment</strong></li><li>Take photos and email us immediately</li></ul></div>',
         resources: [
           {
             icon: '📦',
