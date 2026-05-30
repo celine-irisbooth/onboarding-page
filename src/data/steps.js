@@ -55,7 +55,7 @@ export const steps = [
       {
         subNum: 'A',
         title: 'Prepare for delivery',
-        desc: 'Share the Shipping Guide (Delivery Checklist) with your team so they know what to expect on delivery day.\n<div class="inline-warning">⚠️&nbsp; Before you accept the delivery, ensure the package is in good condition. If there is damage:<ul><li>Report damages on the Bill of Lading (BOL)</li><li><strong>Refuse the shipment</strong></li><li>Take photos and email us immediately</li></ul></div>',
+        desc: 'Share the Shipping Guide (Delivery Checklist) with your team so they know what to expect on delivery day.\n<div class="inline-warning">⚠️&nbsp; <strong>Before signing the BOL</strong> and accepting the delivery, ensure the package is in good condition.<br/><br/>If there is damage:<ul><li>Take photos (Required: Outer packaging before unpacking, signed BOL)</li><li>Note all damage on the BOL before signing</li><li>Contact us immediately for next steps</li></ul></div>',
         resources: [
           {
             icon: '📦',
