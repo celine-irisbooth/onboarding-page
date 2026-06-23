@@ -5,7 +5,7 @@ import './Nav.scss';
 const navItems = [
   { href: '#team', label: 'Meet Your Team' },
   { href: '#expect', label: 'What to Expect' },
-  { href: '#psp', label: 'Your Success Plan' },
+  // { href: '#psp', label: 'Your Success Plan' },
 ];
 
 export function Nav() {

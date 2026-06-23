@@ -20,6 +20,8 @@
     flex-direction: column;
     align-items: center;
     margin-bottom: 24px;
+    min-height: 110px;
+    justify-content: flex-start;
   }
 
   &__num {

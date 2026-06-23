@@ -13,7 +13,7 @@ export default function App() {
       <Hero />
       <TeamSection />
       <Timeline />
-      <PSPSection />
+      {/* <PSPSection /> */}
       <Footer />
     </>
   );

@@ -31,21 +31,6 @@ export const steps = [
           },
         ],
       },
-      {
-        subNum: 'C',
-        title: 'Submit your branding details',
-        desc: 'Submit your logo and messaging for the digital branding on the booth.',
-        tooltip:
-          'For your admin account, choose a group email address (e.g., photos@yourcompany.com) to share credentials.',
-        resources: [
-          {
-            icon: '🎨',
-            label: 'Branding Request Form',
-            href: 'https://docs.google.com/forms/d/e/1FAIpQLSddO3BAmEn_UA7xW4Y_lea5o92PASjgeWSqh0TfcGwlj6A-5A/viewform?usp=sharing&ouid=117691127212973742030',
-            external: true,
-          },
-        ],
-      },
     ],
   },
   {
@@ -55,12 +40,12 @@ export const steps = [
       {
         subNum: 'A',
         title: 'Prepare for delivery',
-        desc: 'Share the Shipping Guide (Delivery Checklist) with your team so they know what to expect on delivery day.\n<div class="inline-warning">⚠️&nbsp; <strong>Before signing the BOL</strong> and accepting the delivery, ensure the package is in good condition.<br/><br/>If there is damage:<ul><li>Take photos (Required: Outer packaging before unpacking, signed BOL)</li><li>Note all damage on the BOL before signing</li><li>Contact us immediately for next steps</li></ul></div>',
+        desc: 'Review, print, and share the Delivery Day Checklist with your team before delivery day.\n<div class="inline-warning">⚠️&nbsp; <strong>Before signing the BOL</strong> and accepting the delivery, ensure the package is in good condition.<br/><br/>If there is damage:<ul><li>Take photos (Required: Outer packaging before unpacking, signed BOL)</li><li>Note all damage on the BOL before signing</li><li>Contact us immediately for next steps</li></ul></div>',
         resources: [
           {
             icon: '📦',
-            label: 'Shipping Guide',
-            href: 'https://docs.google.com/presentation/d/1BEnF3En9XWInyIN37SSR57pl-Wa-jPAI/edit',
+            label: 'Shipping Guide (Delivery Day Checklist)',
+            href: 'https://docs.google.com/presentation/d/1BEnF3En9XWInyIN37SSR57pl-Wa-jPAI/edit?slide=id.g3e499cdd501_0_5#slide=id.g3e499cdd501_0_5',
             external: true,
           },
         ],
@@ -90,54 +75,12 @@ export const steps = [
   },
   {
     num: 3,
-    title: 'Set Up Your Internet\nand VPN Access',
+    title: 'Set Up Your Internet, VPN Access,\n& Booth Branding',
     subCards: [
       {
-        warning: true,
-        title: 'Legacy Upgrade — IT Network Setup',
-        desc: '<span class="warning-qualifier"><strong>This only applies if you were notified about the upgrade.</strong> Skip this if you\'re on the new platform.</span>\n\nWe\'re shipping new features to your booth! Our team will be upgrading your booth from the Legacy software to the new platform.\n\nForward <strong>all</strong> of the documents below to your IT team to configure network access for both the Legacy and new platform.',
-        resourceGroups: [
-          {
-            heading: 'Legacy Platform',
-            resources: [
-              {
-                icon: '📖',
-                label: 'Internet Connection Guide',
-                href: 'https://docs.google.com/presentation/d/1T4fuOjzdeFKReElF7NDdoze2AxQanrEu/edit',
-                external: true,
-              },
-              {
-                icon: '🌐',
-                label: 'Network Configuration',
-                desc: '🔒 Password-protected',
-                href: 'https://drive.google.com/file/d/1UY9uo7BebLpWIRJlUxbdf2mV521dPH7t/view?usp=drive_link',
-                external: true,
-              },
-            ],
-          },
-          {
-            heading: 'New Platform',
-            resources: [
-              {
-                icon: '📖',
-                label: 'Instruction Manual — Network Setup',
-                href: 'https://docs.google.com/presentation/d/1tP6dfkR2k0Ido5oTaHWWeDS_TLZ2Qwb-/edit?slide=id.p9#slide=id.p9',
-                external: true,
-              },
-              {
-                icon: '🌐',
-                label: 'Network Configuration',
-                desc: '🔒 Password-protected',
-                href: 'https://drive.google.com/file/d/1dRsZSBvzSBnzyXwknqYtRVPHyz2ifMJ5/view?usp=sharing',
-                external: true,
-              },
-            ],
-          },
-        ],
-      },
-      {
-        title: 'New Platform — IT Network Setup',
-        desc: '<strong>New platform clients only.</strong>\n\nShare these documents with your IT team to configure internet and network access.',
+        subNum: 'A',
+        title: 'IT Network Setup',
+        desc: 'Share these documents with your IT team to configure internet and network access. <strong>This is required for booth branding, adjusting camera settings, and troubleshooting.</strong>',
         resources: [
           {
             icon: '📖',
@@ -154,34 +97,53 @@ export const steps = [
           },
         ],
       },
-    ],
-  },
-  {
-    num: 4,
-    title: 'Go Live &\nYour Success Plan',
-    subCards: [
       {
-        subNum: 'A',
-        title: 'Capture your first headshot',
-        desc: 'Take your first studio-quality headshot and review best practices!',
+        subNum: 'B',
+        title: 'Confirm your admin account email',
+        desc: 'Submit your group email address to create your admin account. You\'ll receive access to the admin dashboard to manage your booth and view photos.',
         resources: [
           {
-            icon: '⭐',
-            label: 'Best Practices',
-            href: 'https://drive.google.com/file/d/1HRXviOGBvAejXhBjJRFVnLMfzYJPNLQQ/view?usp=sharing',
+            icon: '📋',
+            label: 'Admin Account Request Form',
+            href: 'https://workable-front-aa1.notion.site/839bea94038b82de8d4a0146144fdf5d?pvs=105',
             external: true,
           },
         ],
       },
       {
+        subNum: 'C',
+        title: 'Customize your booth branding',
+        desc: "Update your booth branding in your admin account. Go to <strong>My Devices > Customize</strong>, and manage your Studio (photos follow-up email) under <strong>My Studios > Customize</strong>.",
+      },
+    ],
+  },
+  {
+    num: 4,
+    title: 'Go Live',
+    subCards: [
+      {
+        subNum: 'A',
+        title: 'Capture your first headshot',
+        desc: 'Take your first studio-quality headshot! Our team will review your photos and complete a photo quality check.',
+      },
+      {
         subNum: 'B',
-        title: 'Kick off your Success Plan',
-        desc: "After your first set of photos, we'll review your photos and push your booth branding. You'll get an email to activate your admin account.\n\nOnce your booth is ready to go live, we'll schedule your Success Plan Call to walk through your strategic roadmap for reaching your goals.",
+        title: 'Launch your booth!',
+        desc: 'Use our Marketing Toolkit to produce launch content to spread the word. Share the playlist to train your team on the admin portal.',
         resources: [
           {
-            icon: '🗺️',
-            label: 'Learn more about your Success Plan ↓',
-            href: '#psp',
+            icon: '📣',
+            label: 'Marketing Toolkit',
+            desc: 'Logos, images & messaging',
+            href: 'https://drive.google.com/drive/folders/1UTfs289UbQZbNB7GoS3y_Vf32Cg8mFbL?usp=drive_link',
+            external: true,
+          },
+          {
+            icon: '🎓',
+            label: 'Iris Booth Academy Playlist',
+            desc: 'Video walkthroughs and tutorials',
+            href: 'https://www.youtube.com/playlist?list=PLPf7o80UoCP2Z-DENMbrZKlTE0u_tApfz',
+            external: true,
           },
         ],
       },
