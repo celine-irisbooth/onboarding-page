@@ -18,7 +18,7 @@ export const steps = [
           },
           {
             icon: '📋',
-            label: 'Shipping Form',
+            label: 'Shipping Checklist',
             href: 'https://docs.google.com/forms/d/e/1FAIpQLSeK_uvpGA-tGyjfmFRNDOPSiu1NnyHQQnt7xACevUeTvt5Dnw/viewform?usp=sharing&ouid=117691127212973742030',
             external: true,
           },
