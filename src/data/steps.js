@@ -5,8 +5,10 @@ export const steps = [
     subCards: [
       {
         subNum: 'A',
-        title: 'Choose your shipment method',
-        desc: 'Review your shipping options to determine what works best for your space.',
+        title: 'Enter your shipping details',
+        desc: 'Review our Shipping Guide for delivery options, then submit your shipping details so we can get your booth on the way.',
+        tooltip:
+          'Delivery is to the loading dock or receiving area.',
         resources: [
           {
             icon: '📦',
@@ -14,19 +16,23 @@ export const steps = [
             href: 'https://docs.google.com/presentation/d/1BEnF3En9XWInyIN37SSR57pl-Wa-jPAI/edit',
             external: true,
           },
-        ],
-      },
-      {
-        subNum: 'B',
-        title: 'Enter your shipping details',
-        desc: "Before your booth ships, send us your shipping details.",
-        tooltip:
-          'Delivery is to the loading dock or receiving area.',
-        resources: [
           {
             icon: '📋',
             label: 'Shipping Form',
             href: 'https://docs.google.com/forms/d/e/1FAIpQLSeK_uvpGA-tGyjfmFRNDOPSiu1NnyHQQnt7xACevUeTvt5Dnw/viewform?usp=sharing&ouid=117691127212973742030',
+            external: true,
+          },
+        ],
+      },
+      {
+        subNum: 'B',
+        title: 'Prepare for delivery',
+        desc: 'Review, print, and share the Delivery Day Checklist with your team before delivery day.\n<div class="inline-warning">⚠️&nbsp; <strong>Before signing the BOL</strong> and accepting the delivery, ensure the package is in good condition.<br/><br/>If there is damage:<ul><li>Take photos (Required: Outer packaging before unpacking, signed BOL)</li><li>Note all damage on the BOL before signing</li><li>Contact us immediately for next steps</li></ul></div>',
+        resources: [
+          {
+            icon: '📦',
+            label: 'Shipping Guide (Delivery Day Checklist)',
+            href: 'https://docs.google.com/presentation/d/1BEnF3En9XWInyIN37SSR57pl-Wa-jPAI/edit?slide=id.g3e499cdd501_0_5#slide=id.g3e499cdd501_0_5',
             external: true,
           },
         ],
@@ -39,19 +45,6 @@ export const steps = [
     subCards: [
       {
         subNum: 'A',
-        title: 'Prepare for delivery',
-        desc: 'Review, print, and share the Delivery Day Checklist with your team before delivery day.\n<div class="inline-warning">⚠️&nbsp; <strong>Before signing the BOL</strong> and accepting the delivery, ensure the package is in good condition.<br/><br/>If there is damage:<ul><li>Take photos (Required: Outer packaging before unpacking, signed BOL)</li><li>Note all damage on the BOL before signing</li><li>Contact us immediately for next steps</li></ul></div>',
-        resources: [
-          {
-            icon: '📦',
-            label: 'Shipping Guide (Delivery Day Checklist)',
-            href: 'https://docs.google.com/presentation/d/1BEnF3En9XWInyIN37SSR57pl-Wa-jPAI/edit?slide=id.g3e499cdd501_0_5#slide=id.g3e499cdd501_0_5',
-            external: true,
-          },
-        ],
-      },
-      {
-        subNum: 'B',
         title: 'Assemble your booth',
         desc: 'Everything you need to assemble and get your booth ready.',
         resources: [
