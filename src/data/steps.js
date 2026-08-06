@@ -92,8 +92,8 @@ export const steps = [
       },
       {
         subNum: 'B',
-        title: 'Confirm your admin account email',
-        desc: 'Submit your group email address to create your admin account. You\'ll receive access to the admin dashboard to manage your booth and view photos.',
+        title: 'Admin Account Setup',
+        desc: 'Submit your group email address to create your admin account. You\'ll receive access to the admin dashboard to manage your booth and view photos.\n<div class="inline-warning">⚠️&nbsp; <strong>Important:</strong> Your IT team must complete Step 3A (internet and VPN/remote access) before we can send your admin account activation email.</div>',
         resources: [
           {
             icon: '📋',
