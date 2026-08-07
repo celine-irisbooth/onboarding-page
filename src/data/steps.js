@@ -134,7 +134,7 @@ export const steps = [
           {
             icon: '🎓',
             label: 'Iris Booth Academy Playlist',
-            desc: 'Video walkthroughs and tutorials',
+            desc: 'Video training walkthroughs to help your team get comfortable with the platform. New videos are uploaded when new features are released.',
             href: 'https://www.youtube.com/playlist?list=PLPf7o80UoCP2Z-DENMbrZKlTE0u_tApfz',
             external: true,
           },
