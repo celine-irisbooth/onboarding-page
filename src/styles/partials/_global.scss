@@ -64,3 +64,21 @@ body {
   line-height: 1.7;
   margin-bottom: 52px;
 }
+
+// ── Print (used to generate the downloadable PDF copy) ──
+@media print {
+  // !important is required — component styles load after this partial
+  .nav,
+  .hero__pdf-link {
+    display: none !important;
+  }
+
+  .team-card,
+  .team-section__support,
+  .timeline-step,
+  .timeline-step__sub-card,
+  .resource-link,
+  .footer {
+    break-inside: avoid;
+  }
+}

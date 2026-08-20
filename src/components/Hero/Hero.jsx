@@ -12,7 +12,7 @@ export function Hero() {
       </p>
       <a
         className="hero__pdf-link"
-        href="https://drive.google.com/file/d/1DgVB7cLlFd97eW6JA0rqWjO-t_7FNh8E/view?usp=sharing"
+        href="https://drive.google.com/file/d/1-sYQwCYBebJcDjCr6nvjAl13PVDEu8DK/view?usp=sharing"
         target="_blank"
         rel="noopener noreferrer"
       >
